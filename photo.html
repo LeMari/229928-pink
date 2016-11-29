@@ -109,20 +109,22 @@
     </div>
     <div class="photo-post">
       <div class="photo-post__slogan">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</div>
-      <div class="photo-post__picture"><img src="#" alt="picture" width="50" height="50"></div>
-      <div class="photo-post__filters">
-        <a class="photo-post__filter-crop photo-post__filter-crop_active"></a>
-        <a class="photo-post__filter-fill"></a>
-        <a class="photo-post__filter-contrast"></a>
-      </div>
-      <div class="photo-post__filters-range">
-        <div class="photo-post__filters-scale"></div>
-        <div class="photo-post__filters-ball"></div>
-      </div>
-      <div class="photo-post__buttons">
-        <a href="" class="photo-post__send btn">Запостить</a>
-        <a href="" class="photo-post__back photo-post__back btn btn_disabled">Отмена</a>
-      </div>
+      <form class="photo-post__form">
+        <div class="photo-post__picture"><img src="#" alt="picture" width="50" height="50"></div>
+        <div class="photo-post__filters">
+          <a class="photo-post__filter-crop photo-post__filter-crop_active"></a>
+          <a class="photo-post__filter-fill"></a>
+          <a class="photo-post__filter-contrast"></a>
+        </div>
+        <div class="photo-post__filters-range">
+          <div class="photo-post__filters-scale"></div>
+          <div class="photo-post__filters-ball"></div>
+        </div>
+        <div class="photo-post__buttons">
+          <button type="submit" class="photo-post__send">Запостить</button>
+          <button type="reset" class="photo-post__back" disabled>Отмена</button>
+        </div>
+      </form>
     </div>
 
   </main>
