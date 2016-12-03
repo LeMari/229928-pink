@@ -10,23 +10,28 @@
 <body>
 
   <header class="header">
-    <h1 class="header__title">Pink</h1>
-    <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__item">
-          <a class="nav__link">Главная</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#">Фотографии</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#">Конкурс</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#">Html academy</a>
-        </li>
-      </ul>
-    </nav>
+    <div class="header__wrapper">
+      <div class="header__title">
+        <a><img class="header__logo" src="img/logo-pink-white-mobile.svg" alt="Pink" width="75" height="23"></a>
+        <a><img class="header__burger" src="img/icon-menu-burger.svg" alt="Меню" width="50" height="25"></a>
+      </div>
+      <nav class="nav nav_fixed">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link">Главная</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Фотографии</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Конкурс</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Html academy</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
     <div class="photo-intro">
       <div class="photo-intro__img"></div>
       <div class="photo-intro__content">Фотографии пользователей</div>
@@ -38,8 +43,12 @@
       <br>Видите, как не хватает ваших?</div>
     <div class="photo-items">
       <article class="photo-item">
-        <img class="photo-item__picture photo-item__picture_fullsize" src="img/panorama-mobile@1x.jpg" alt="picture" width="320" height="138">
-        <div class="photo-item__picture-panorama">Панорама дня</div>
+        <div class="photo-item__wrapper">
+          <div class="photo-item__wrapper-center">
+            <img class="photo-item__picture photo-item__picture_fullsize" src="img/panorama-mobile@1x.jpg" alt="picture" width="320" height="137">
+            <div class="photo-item__picture-panorama">Панорама дня</div>
+          </div>
+        </div>
         <div class="photo-item__content">
           <p class="photo-item__title"><span class="photo-item__title-name">Анна</span>
             <span class="photo-item__title-time">(5 минут назад)</span></p>

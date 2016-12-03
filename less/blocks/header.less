@@ -1,12 +1,17 @@
 .header {
   background: url(../../img/bg-back-mobile@1x.jpg) no-repeat;
   background-position: center top;
+  text-align: center;
 }
-.header__title {
+.header__wrapper {
   min-width: @mobile-width;
+  width: 100%;
   position: fixed;
   top: 0;
-  left: 0;
+  z-index: 100;
+}
+.header__title {
+  margin: 0 auto;
   height: 70px;
   background-color: rgba(0, 0, 0, 0.3);
 }
