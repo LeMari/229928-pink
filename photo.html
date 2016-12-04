@@ -4,28 +4,34 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
 
   <header class="header">
-    <h1 class="header__title">Pink</h1>
-    <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__item">
-          <a class="nav__link">Главная</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#">Фотографии</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#">Конкурс</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#">Html academy</a>
-        </li>
-      </ul>
-    </nav>
+    <div class="header__wrapper">
+      <div class="header__title">
+        <a><img class="header__logo" src="img/logo-pink-white-mobile.svg" alt="Pink" width="75" height="23"></a>
+        <a><img class="header__burger" src="img/icon-menu-burger.svg" alt="Меню" width="50" height="25"></a>
+      </div>
+      <nav class="nav nav_fixed">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link">Главная</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Фотографии</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Конкурс</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Html academy</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
     <div class="photo-intro">
       <div class="photo-intro__img"></div>
       <div class="photo-intro__content">Фотографии пользователей</div>
@@ -33,96 +39,111 @@
   </header>
 
   <main class="photo-main">
-    <div class="photo-main-slogan">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</div>
+    <div class="photo-main-slogan">Взгляните на фотографии, которые выкладывают пользователи!
+      <br>Видите, как не хватает ваших?</div>
     <div class="photo-items">
       <article class="photo-item">
-        <img class="photo-item__picture photo-item__picture_fullsize" src="#" alt="picture" width="150" height="50">
-        <div class="photo-item__picture-panorama">Панорама дня</div>
+        <div class="photo-item__wrapper">
+          <div class="photo-item__wrapper-center">
+            <img class="photo-item__picture photo-item__picture_fullsize" src="img/panorama-mobile@1x.jpg" alt="picture" width="320" height="137">
+            <div class="photo-item__picture-panorama">Панорама дня</div>
+          </div>
+        </div>
         <div class="photo-item__content">
-          <p class="photo-item__title"><span class="photo-item__title_name">Анна</span>
-            <span class="photo-item__title_time">(5 минут назад)</span></p>
+          <p class="photo-item__title"><span class="photo-item__title-name">Анна</span>
+            <span class="photo-item__title-time">(5 минут назад)</span></p>
           <p class="photo-item__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+          <p class="photo-item__like">Нравится:<span class="photo-item__like-count">215</span></p>
         </div>
-        <p class="photo-item__like">Нравится:<span class="photo-item__like-count">215</span></p>
-        /* число лайков будет псевдоклассом ::after , а сердце ::before */
+
       </article>
       <article class="photo-item">
-        <img class="photo-item__picture" src="#" alt="picture" width="50" height="50">
+        <img class="photo-item__picture" src="img/photo-1-mobile@1x.jpg" alt="picture" width="280" height="180">
         <div class="photo-item__content">
-          <p class="photo-item__title"><span class="photo-item__title_name">Левон</span>
-            <span class="photo-item__title_time">(5 часов назад)</span></p>
+          <p class="photo-item__title"><span class="photo-item__title-name">Левон</span>
+            <span class="photo-item__title-time">(5 часов назад)</span></p>
           <p class="photo-item__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+          <p class="photo-item__like">Нравится:<span class="photo-item__like-count">356</span></p>
         </div>
-        <p class="photo-item__like">Нравится:<span class="photo-item__like-count">356</span></p>
-        /* число лайков будет псевдоклассом ::after , а сердце ::before */
+
       </article>
       <article class="photo-item">
-        <img class="photo-item__picture" src="#" alt="picture" width="50" height="50">
+        <img class="photo-item__picture" src="img/photo-2-mobile@1x.jpg" alt="picture" width="280" height="180">
         <div class="photo-item__content">
-          <p class="photo-item__title"><span class="photo-item__title_name">Антон</span>
-            <span class="photo-item__title_time">(12 часов назад)</span></p>
+          <p class="photo-item__title"><span class="photo-item__title-name">Антон</span>
+            <span class="photo-item__title-time">(12 часов назад)</span></p>
           <p class="photo-item__text">Соседи будут рады!</p>
+          <p class="photo-item__like">Нравится:<span class="photo-item__like-count">666</span></p>
         </div>
-        <p class="photo-item__like">Нравится:<span class="photo-item__like-count">666</span></p>
-        /* число лайков будет псевдоклассом ::after , а сердце ::before */
+
       </article>
       <article class="photo-item">
-        <img class="photo-item__picture" src="#" alt="picture" width="50" height="50">
+        <img class="photo-item__picture" src="img/photo-3-mobile@1x.jpg" alt="picture" width="280" height="180">
         <div class="photo-item__content">
-          <p class="photo-item__title"><span class="photo-item__title_name">Борис</span>
-            <span class="photo-item__title_time">(20 часов назад)</span></p>
+          <p class="photo-item__title"><span class="photo-item__title-name">Борис</span>
+            <span class="photo-item__title-time">(20 часов назад)</span></p>
           <p class="photo-item__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+          <p class="photo-item__like">Нравится:<span class="photo-item__like-count">215</span></p>
         </div>
-        <p class="photo-item__like">Нравится:<span class="photo-item__like-count">215</span></p>
-        /* число лайков будет псевдоклассом ::after , а сердце ::before */
+
       </article>
       <article class="photo-item">
-        <img class="photo-item__picture" src="#" alt="picture" width="50" height="50">
+        <img class="photo-item__picture" src="img/photo-4-mobile@1x.jpg" alt="picture" width="280" height="180">
         <div class="photo-item__content">
-          <p class="photo-item__title"><span class="photo-item__title_name">Сергей</span>
-            <span class="photo-item__title_time">(25 часов назад)</span></p>
+          <p class="photo-item__title"><span class="photo-item__title-name">Сергей</span>
+            <span class="photo-item__title-time">(25 часов назад)</span></p>
           <p class="photo-item__text">Самая кубанская в мире!</p>
+          <p class="photo-item__like">Нравится:<span class="photo-item__like-count">4</span></p>
+
         </div>
-        <p class="photo-item__like">Нравится:<span class="photo-item__like-count">4</span></p>
-        /* число лайков будет псевдоклассом ::after , а сердце ::before */
+
       </article>
       <article class="photo-item">
-        <img class="photo-item__picture" src="#" alt="picture" width="50" height="50">
+        <img class="photo-item__picture" src="img/photo-5-mobile@1x.jpg" alt="picture" width="280" height="180">
         <div class="photo-item__content">
-          <p class="photo-item__title"><span class="photo-item__title_name">Максим</span>
-            <span class="photo-item__title_time">(40 часов назад)</span></p>
+          <p class="photo-item__title"><span class="photo-item__title-name">Максим</span>
+            <span class="photo-item__title-time">(40 часов назад)</span></p>
           <p class="photo-item__text">Где снег-то?</p>
+          <p class="photo-item__like">Нравится:<span class="photo-item__like-count">150</span></p>
         </div>
-        <p class="photo-item__like">Нравится:<span class="photo-item__like-count">150</span></p>
-        /* число лайков будет псевдоклассом ::after , а сердце ::before */
+
       </article>
       <article class="photo-item">
-        <img class="photo-item__picture" src="#" alt="picture" width="50" height="50">
+        <img class="photo-item__picture" src="img/photo-6-mobile@1x.jpg" alt="picture" width="280" height="180">
         <div class="photo-item__content">
-          <p class="photo-item__title"><span class="photo-item__title_name">Надежда</span>
-            <span class="photo-item__title_time">(45 часов назад)</span></p>
+          <p class="photo-item__title"><span class="photo-item__title-name">Надежда</span>
+            <span class="photo-item__title-time">(45 часов назад)</span></p>
           <p class="photo-item__text">Всем GM и взаимные лайки!</p>
+          <p class="photo-item__like">Нравится:<span class="photo-item__like-count">2560</span></p>
         </div>
-        <p class="photo-item__like">Нравится:<span class="photo-item__like-count">2560</span></p>
-        /* число лайков будет псевдоклассом ::after , а сердце ::before */
+
       </article>
     </div>
     <div class="photo-post">
-      <div class="photo-post__slogan">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</div>
+      <div class="photo-post__slogan">Затмите их всех!
+        <br>Выкладывайте все, что накопилось в телефоне!</div>
       <form class="photo-post__form" action="#" method="post">
-        <div class="photo-post__picture"><img src="#" alt="picture" width="50" height="50"></div>
+        <img class="photo-post__picture" src="img/photo-7-mobile@1x.jpg" alt="picture" width="280" height="374">
         <div class="photo-post__filters">
-          <a class="photo-post__filter-crop photo-post__filter-crop_active"></a>
-          <a class="photo-post__filter-fill"></a>
-          <a class="photo-post__filter-contrast"></a>
+          <!--          <a class="photo-post__filter photo-post__filter-crop photo-post__filter-crop_active">-->
+          <img class="photo-post__filter photo-post__filter-crop photo-post__filter-crop_active" src="img/icon-editor-crop.svg" width="48" height="48">
+          <!--          </a>-->
+          <!--          <a class="photo-post__filter photo-post__filter-fill">-->
+          <img class="photo-post__filter photo-post__filter-fill" src="img/icon-editor-fill.svg" width="48" height="48">
+          <!--          </a>-->
+          <!--          <a class="photo-post__filter photo-post__filter-contrast">-->
+          <img class="photo-post__filter photo-post__filter-contrast" src="img/icon-editor-contrast.svg" width="32" height="32">
+          <!--          </a>-->
         </div>
         <div class="photo-post__filters-range">
           <div class="photo-post__filters-scale"></div>
-          <div class="photo-post__filters-ball"></div>
+
+          <img class="photo-post__filters-ball" src="img/icon-editor-diagram-fill.svg" width="14" height="14">
+
         </div>
         <div class="photo-post__buttons">
-          <button type="submit" class="photo-post__send">Запостить</button>
-          <button type="reset" class="photo-post__back" disabled>Отмена</button>
+          <button type="submit" class="photo-post__uload button"><span>Запостить</span></button>
+          <button type="reset" class="photo-post__cancel button"><span>Отмена</span></button>
         </div>
       </form>
     </div>
@@ -130,15 +151,21 @@
   </main>
 
   <footer class="page-footer">
-    <img class="page-footer__logo" alt="Pink" src="#" width="50" height="50">
+    <img class="page-footer__logo" alt="Pink" src="img/logo-pink-blue-mobile.svg" width="" height="">
     <div class="social-icons">
-      <a href="#" class="social-icons__social-icon social-icons__social-icon_twit">Twit</a>
-      <a href="#" class="social-icons__social-icon social-icons__social-icon_fb">FB</a>
-      <a href="#" class="social-icons__social-icon social-icons__social-icon_youtube">YT</a>
+      <a href="#" class="social-icons__social-icon social-icons__social-icon_twit">
+        <img src="img/icon-twitter.svg">
+      </a>
+      <a href="#" class="social-icons__social-icon social-icons__social-icon_fb">
+        <img src="img/icon-facebook.svg">
+      </a>
+      <a href="#" class="social-icons__social-icon social-icons__social-icon_youtube">
+        <img src="img/icon-youtube.svg">
+      </a>
     </div>
     <div class="creators">
       <span class="creators__text">Разработано</span>
-      <img class="creators__logo" src="#" alt="Html-academy" width="50" height="50">
+      <img class="creators__logo" src="img/logo-htmlacademy.svg" alt="Html-academy" width="50" height="50">
     </div>
   </footer>
 </body>

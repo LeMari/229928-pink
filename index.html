@@ -4,28 +4,34 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
 
   <header class="header">
-    <h1 class="header__title">Pink</h1>
-    <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__item">
-          <a class="nav__link">Главная</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#">Фотографии</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#">Конкурс</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#">Html academy</a>
-        </li>
-      </ul>
-    </nav>
+    <div class="header__wrapper">
+      <div class="header__title">
+        <a><img class="header__logo" src="img/logo-pink-white-mobile.svg" alt="Pink" width="75" height="23"></a>
+        <a><img class="header__burger" src="img/icon-menu-burger.svg" alt="Меню" width="50" height="25"></a>
+      </div>
+      <nav class="nav nav_fixed">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link">Главная</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Фотографии</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Конкурс</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Html academy</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
     <div class="intro">
       <img class="intro__img" src="#" alt="picture" width="50" height="50">
       <div class="intro__content">
@@ -38,27 +44,30 @@
         <p class="intro__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </div>
     </div>
+
   </header>
 
   <main class="main">
     <section class="info">
       <div class="info__slogan">
-        <span>Устали от серости мегаполиса?</span>
-        <span>Нам есть, что вам предложить!</span>
+        <p>Устали от серости мегаполиса?</p>
+        <p>Нам есть, что вам предложить!</p>
       </div>
-      <div class="info__item">
-        <h2 class="info__title">Поднимает настроение</h2>
-        <p class="info__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+      <div class="info__list">
+        <div class="info__item">
+          <h2 class="info__title">Поднимает настроение</h2>
+          <p class="info__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+        </div>
+        <div class="info__item">
+          <h2 class="info__title">Меняет мир вокруг</h2>
+          <p class="info__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+        </div>
+        <div class="info__item">
+          <h2 class="info__title">Заводит новых друзей</h2>
+          <p class="info__text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+        </div>
+        <div class="info__img-wrapper"><img class="info__img" src="img/iphone-screen-mobile@1x.png"></div>
       </div>
-      <div class="info__item">
-        <h2 class="info__title">Меняет мир вокруг</h2>
-        <p class="info__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-      </div>
-      <div class="info__item">
-        <h2 class="info__title">Заводит новых друзей</h2>
-        <p class="info__text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
-      </div>
-      <div class="info__img"></div>
     </section>
     <section class="review">
       <div class="review__wrapper  slider">
@@ -159,19 +168,21 @@
     <div class="footer__slogan">
       <span>Остались вопросы? Свяжитесь с нами!</span>
     </div>
-    <div class="footer__item">
-      <h2 class="footer__title">Звоните:</h2>
-      <a href="tel:+78125556666" class="footer__text">+7 (812) 555-66-66</a>
+    <div class="footer__contacts">
+      <div class="footer__item">
+        <h2 class="footer__title">Звоните:</h2>
+        <a href="tel:+78125556666" class="footer__text">+7 (812) 555-66-66</a>
+      </div>
+      <div class="footer__item">
+        <h2 class="footer__title">Пишите:</h2>
+        <a href="mailto:mail@htmlacademy.ru" class="footer__text">mail@htmlacademy.ru</a>
+      </div>
+      <div class="footer__item">
+        <h2 class="footer__title">Приезжайте в гости:</h2>
+        <p class="footer__text">ул. Большая Конюшенная, 19/8</p>
+      </div>
     </div>
-    <div class="footer__item">
-      <h2 class="footer__title">Пишите:</h2>
-      <a href="mailto:mail@htmlacademy.ru" class="footer__text">mail@htmlacademy.ru</a>
-    </div>
-    <div class="footer__item">
-      <h2 class="footer__title">Приезжайте в гости:</h2>
-      <p class="footer__text">ул. Большая Конюшенная, 19/8</p>
-    </div>
-    <img class="footer__map" src="#" alt="picture" width="50" height="50">
+    <img class="footer__map" src="#" alt="Карта" width="320" height="200">
   </footer>
 </body>
 
