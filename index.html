@@ -4,44 +4,52 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
 
   <header class="header">
-    <div class="header__wrapper">
-      <div class="header__title">
-        <a><img class="header__logo" src="img/logo-pink-white-mobile.svg" alt="Pink" width="75" height="23"></a>
-        <a><img class="header__burger" src="img/icon-menu-burger.svg" alt="Меню" width="50" height="25"></a>
-      </div>
-      <nav class="nav nav_fixed">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a class="nav__link">Главная</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#">Фотографии</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#">Конкурс</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#">Html academy</a>
-          </li>
-        </ul>
+
+    <div class="header__title">
+      <a href="#"><img class="header__logo" src="img/logo-pink-white-mobile.svg" alt="Pink" width="75" height="23"></a>
+      <a href="#"><img class="header__burger" src="img/icon-menu-burger.svg" alt="Меню" width="50" height="25"></a>
+      <nav class="nav">
+        <div class="nav__wrapper">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link">Главная</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Фотографии</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Конкурс</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Html academy</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </div>
-    <div class="intro">
-      <img class="intro__img" src="#" alt="picture" width="50" height="50">
-      <div class="intro__content">
-        <a сlass="intro__link  btn" href="#">Скачать приложение</a>
-        <div class="intro__icons">
-          <a class="intro__icon-apple" href="#">Apple</a>
-          <a class="intro__icon-android" href="#">Android</a>
-          <a class="intro__icon-windows" href="#">Windows</a>
+
+    <div class="header__down">
+      <div class="header__hand-mobile"><img src="img/iphone-hand-mobile@1x.png" width="258" height="286"></div>
+
+      <div class="intro">
+
+        <div class="intro__content">
+          <p class="intro__slogan intro__slogan_hidden">Взгляните на жизнь иначе!</p>
+          <a сlass="intro__link  button" href="#">Скачать приложение</a>
+          <div class="intro__icons">
+            <a class="intro__icon-apple" href="#">Apple</a>
+            <a class="intro__icon-android" href="#">Android</a>
+            <a class="intro__icon-windows" href="#">Windows</a>
+          </div>
+          <p class="intro__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </div>
-        <p class="intro__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </div>
     </div>
 
@@ -182,8 +190,27 @@
         <p class="footer__text">ул. Большая Конюшенная, 19/8</p>
       </div>
     </div>
-    <img class="footer__map" src="#" alt="Карта" width="320" height="200">
+    <div id="yandex-map"></div>
+    <div class="footer__end footer__end_hidden">
+      <img class="page-footer__logo" alt="Pink" src="img/logo-pink-blue-mobile.svg" width="147" height="41">
+      <div class="social-icons">
+        <a href="#" class="social-icons__social-icon social-icons__social-icon_twit">
+          <img src="img/icon-twitter.svg">
+        </a>
+        <a href="#" class="social-icons__social-icon social-icons__social-icon_fb">
+          <img src="img/icon-facebook.svg">
+        </a>
+        <a href="#" class="social-icons__social-icon social-icons__social-icon_youtube">
+          <img src="img/icon-youtube.svg">
+        </a>
+      </div>
+      <div class="creators">
+        <span class="creators__text">Разработано</span>
+        <img class="creators__logo" src="img/logo-htmlacademy.svg" alt="Html-academy" width="27" height="35">
+      </div>
+    </div>
   </footer>
+  <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=w0lZsD1sRhU8kFtEp_x0Rfy8BJeHGPGm&amp;width=100%25&amp;height=200&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true&amp;id=yandex-map"></script>
 </body>
 
 </html>

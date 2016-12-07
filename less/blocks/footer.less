@@ -1,5 +1,6 @@
 .footer {
   font-size: 24px;
+  text-align: center;
 }
 .footer__slogan {
   font-family: "Open Sans Light", "Arial", sans-serif;
@@ -29,7 +30,27 @@
   text-decoration: none;
 }
 .footer__map {
+  min-height: 200px;
+  width: auto;
   display: block;
-  background: url("../img/bg-map-mobile@1x.png");
-  background-position: right top;
+  background: url("../img/bg-triangle-white-footer.svg") no-repeat, url("../img/bg-map-mobile@1x.png");
+  background-position: left top, right bottom;
+  background-size: 100%, cover;
+}
+.footer__img-map {
+  display: block;
+}
+.footer__end_hidden {
+  display: none;
+  @media (min-width: 700px) {
+    .page-footer__logo {
+      float: left;
+    }
+    .social-icons {
+      float: left;
+    }
+    .creators {
+      float: right;
+    }
+  }
 }
