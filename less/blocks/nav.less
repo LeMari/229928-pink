@@ -1,19 +1,14 @@
 .nav {
   display: none;
-  clear: both;
   background-color: #283645;
   @media @desktop-widths {
     display: block;
     min-height: 110px;
-    margin: 0;
-    clear: none;
+    top: 0;
+    right: 0;
     background-color: transparent;
-  }
-}
-.nav__wrapper {
-  @media @desktop-widths {
-    .container();
-    .clearfix();
+    position: absolute;
+    width: 620px;
   }
 }
 .nav__list {
@@ -29,6 +24,7 @@
   margin: 0 auto;
   @media @desktop-widths {
     display: inline-block;
+    border: none;
   }
 }
 .nav__link {
@@ -41,4 +37,7 @@
   line-height: 32px;
   color: #fff;
   text-transform: uppercase;
+  @media @desktop-widths {
+    text-transform: none;
+  }
 }

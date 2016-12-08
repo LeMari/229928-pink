@@ -9,26 +9,31 @@
 
 <body>
 
-  <header class="header">
-    <h1 class="header__title">Pink</h1>
-    <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__item">
-          <a class="nav__link">Главная</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#">Фотографии</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#">Конкурс</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#">Html academy</a>
-        </li>
-      </ul>
-    </nav>
+  <header class="header form-header">
+    <div class="header__line"></div>
+    <div class="header__wrapper">
+      <div class="header__title">
+        <a href="#"><img class="header__logo" src="img/logo-pink-white-mobile.svg" alt="Pink" width="75" height="23"></a>
+        <a href="#"><img class="header__burger" src="img/icon-menu-burger.svg" alt="Меню" width="50" height="25"></a>
+      </div>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link">Главная</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Фотографии</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Конкурс</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Html academy</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
     <div class="form-intro">
-      <img class="intro__img" src="#" alt="picture" width="50" height="50">
       <div class="form-intro__content">Конкурс на самое безбашеное путешествие с Пинк</div>
     </div>
   </header>
@@ -37,27 +42,33 @@
     <div class="form-main-slogan">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните</div>
     <form class="form" action="#" method="post">
       <div class="form__user-name">
-        <p class="form__title form__title_left">Фамилия</p>
-        <input name="family" class="form__input-text" type="text" value="" placeholder="Укажите фамилию *">
-        <p class="form__title form__title_left">Имя</p>
-        <input name="name" class="form__input-text" type="text" value="" placeholder="Введите ваше имя *">
-        <p class="form__title form__title_left">Отчество</p>
-        <input name="second-name" class="form__input-text" type="text" value="" placeholder="Ну и отчество тоже">
+        <label class="form__label_input">
+          <p class="form__title form__title_left">Фамилия</p>
+          <input name="family" class="form__input-text" type="text" value="" placeholder="Укажите фамилию *">
+        </label>
+        <label class="form__label_input">
+          <p class="form__title form__title_left">Имя</p>
+          <input name="name" class="form__input-text" type="text" value="" placeholder="Введите ваше имя *">
+        </label>
+        <label class="form__label_input">
+          <p class="form__title form__title_left">Отчество</p>
+          <input name="second-name" class="form__input-text" type="text" value="" placeholder="Ну и отчество тоже">
+        </label>
       </div>
       <div class="form__achievements">
         <p class="form__title form__title_center">Ваши безбашенные достижения в путешествии</p>
-        <label for="ach_1" class="form__label-checkbox">Сделал селфи с акулой</label>
         <input id="ach_1" name="achievements" class="form__input-checkbox" type="checkbox" value="ach_1" checked>
-        <label for="ach_2" class="form__label-checkbox">Обгорел на пляже</label>
+        <label for="ach_1" class="form__label-checkbox">Сделал селфи с акулой</label>
         <input id="ach_2" name="achievements" class="form__input-checkbox" type="checkbox" value="ach_2" checked>
-        <label for="ach_3" class="form__label-checkbox">Видел Чака Норриса</label>
+        <label for="ach_2" class="form__label-checkbox">Обгорел на пляже</label>
         <input id="ach_3" name="achievements" class="form__input-checkbox" type="checkbox" value="ach_3">
-        <label for="ach_4" class="form__label-checkbox">Накупил сувениров</label>
+        <label for="ach_3" class="form__label-checkbox">Видел Чака Норриса</label>
         <input id="ach_4" name="achievements" class="form__input-checkbox" type="checkbox" value="ach_4">
-        <label for="ach_5" class="form__label-checkbox">Удержал башню</label>
+        <label for="ach_4" class="form__label-checkbox">Накупил сувениров</label>
         <input id="ach_5" name="achievements" class="form__input-checkbox" type="checkbox" value="ach_5" checked>
-        <label for="ach_6" class="form__label-checkbox">Разгромил отель</label>
+        <label for="ach_5" class="form__label-checkbox">Удержал башню</label>
         <input id="ach_6" name="achievements" class="form__input-checkbox" type="checkbox" value="ach_6">
+        <label for="ach_6" class="form__label-checkbox">Разгромил отель</label>
       </div>
       <div class="form__contacts">
         <p class="form__title form__title_left">Номер телефона</p>
@@ -67,19 +78,21 @@
       </div>
       <div class="form__apps">
         <p class="form__title form__title_center">C каким приложением путешествовали?</p>
-        <label for="app_1" class="form__label-radio">Pink для iOS</label>
         <input id="app_1" name="apps" class="form__input-radio" type="radio" value="app_1" checked>
-        <label for="app_2" class="form__label-radio">Pink на Android</label>
+        <label for="app_1" class="form__label-radio">Pink для iOS</label>
         <input id="app_2" name="apps" class="form__input-radio" type="radio" value="app_2">
-        <label for="app_3" class="form__label-radio">Windows Phone</label>
+        <label for="app_2" class="form__label-radio">Pink на Android</label>
         <input id="app_3" name="apps" class="form__input-radio" type="radio" value="app_3">
+        <label for="app_3" class="form__label-radio">Windows Phone</label>
       </div>
       <div class="form__emotions">
         <p class="form__title form__title_left">Опишите свои эмоции</p>
         <textarea name="emotion" class="form__input-text">Можно прям в красках, не стесняясь в выражениях</textarea>
       </div>
-      <button class="form__send button" type="submit">Отправить форму</button>
-      <p class="form__required"><sup>*</sup> - обязательные поля</p>
+      <div class="form__footer">
+        <button class="form__send button" type="submit">Отправить форму</button>
+        <p class="form__required"><sup>*</sup> - обязательные поля</p>
+      </div>
 
       <div class="form__popup-fail form__popup-fail-hidden">
         <p class="form__fail-title">Что-то пошло не так!</p>
@@ -95,15 +108,21 @@
   </main>
 
   <footer class="page-footer">
-    <img class="page-footer__logo" alt="Pink" src="#" width="50" height="50">
+    <img class="page-footer__logo" alt="Pink" src="img/logo-pink-blue-mobile.svg" width="147" height="41">
     <div class="social-icons">
-      <a href="#" class="social-icons__social-icon social-icons__social-icon_twit">Twit</a>
-      <a href="#" class="social-icons__social-icon social-icons__social-icon_fb">FB</a>
-      <a href="#" class="social-icons__social-icon social-icons__social-icon_youtube">YT</a>
+      <a href="#" class="social-icons__social-icon social-icons__social-icon_twit">
+        <img src="img/icon-twitter.svg">
+      </a>
+      <a href="#" class="social-icons__social-icon social-icons__social-icon_fb">
+        <img src="img/icon-facebook.svg">
+      </a>
+      <a href="#" class="social-icons__social-icon social-icons__social-icon_youtube">
+        <img src="img/icon-youtube.svg">
+      </a>
     </div>
     <div class="creators">
       <span class="creators__text">Разработано</span>
-      <img class="creators__logo" src="#" alt="Html-academy" width="50" height="50">
+      <img class="creators__logo" src="img/logo-htmlacademy.svg" alt="Html-academy" width="50" height="50">
     </div>
   </footer>
 
