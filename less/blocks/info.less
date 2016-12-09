@@ -1,32 +1,76 @@
 .info {
-  display: block;
-  text-align: center;
+  @media @tablet-widths {
+    min-height: 726px;
+  }
+  @media @desktop-widths {
+    min-height: 933px;
+  }
 }
 .info__slogan {
-  padding: 0 25px 40px;
+  height: 250px;
+  padding: 0 25px;
   font-family: "Open Sans Light", "Arial", sans-serif;
   font-size: 24px;
-  background: #fff;
+  text-align: center;
+  //  background-color: #fff;
+  @media @tablet-widths {
+    min-height: 245px;
+  }
+  @media @desktop-widths {
+    min-height: 323px;
+  }
 }
 .info__slogan p {
   margin: 0;
   padding: 0;
-  margin-top: 40px;
+  //  margin-top: 40px;
 }
 .info__list {
-  background: #f2f2f2;
+  //  background: #f2f2f2;
   padding-top: 50px;
+  text-align: center;
+  position: relative;
+  min-height: 786px;
+  box-sizing: border-box;
+  @media @tablet-widths {
+    padding-left: 300px;
+    min-height: 482px;
+  }
+  @media @desktop-widths {
+    padding-left: 0;
+    min-height: 560px;
+  }
 }
 .info__item {
-  margin-bottom: 45px;
-  padding: 0 20px;
+  padding: 20px 20px;
+  &:first-child {
+    padding-top: 0;
+  }
+  &:last-child {
+    padding-bottom: 0;
+  }
+  @media @tablet-widths {
+    text-align: left;
+  }
+  @media @desktop-widths {
+    vertical-align: top;
+    text-align: center;
+    display: inline-block;
+    width: 240px;
+  }
 }
 .info__title {
   margin: 0;
   padding: 0;
   font-family: "Open Sans Bold", "Arial", sans-serif;
   font-size: 18px;
+  text-align: 10px;
   margin-bottom: 5px;
+  @media @desktop-widths {
+    font-size: 30px;
+    text-align: 30px;
+    width: 230px;
+  }
 }
 .info__text {
   margin: 0;
@@ -35,7 +79,21 @@
 }
 .info__img-wrapper {
   text-align: center;
+  display: none;
+  @media @tablet-widths {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  @media @desktop-widths {
+    position: relative;
+    display: block;
+    float: left;
+  }
+}
+.info__item:last-child .info__img-wrapper {
   display: block;
+  bottom: 0;
 }
 .info__img {
   bottom: 0;

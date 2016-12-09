@@ -10,12 +10,13 @@
 <body>
 
   <header class="header">
+    <div class="header__line"></div>
     <div class="header__wrapper">
       <div class="header__title">
-        <a><img class="header__logo" src="img/logo-pink-white-mobile.svg" alt="Pink" width="75" height="23"></a>
-        <a><img class="header__burger" src="img/icon-menu-burger.svg" alt="Меню" width="50" height="25"></a>
+        <a href="#"><img class="header__logo" src="img/logo-pink-white-mobile.svg" alt="Pink" width="75" height="23"></a>
+        <a href="#"><img class="header__burger" src="img/icon-menu-burger.svg" alt="Меню" width="50" height="25"></a>
       </div>
-      <nav class="nav nav_fixed">
+      <nav class="nav">
         <ul class="nav__list">
           <li class="nav__item">
             <a class="nav__link">Главная</a>
@@ -33,7 +34,7 @@
       </nav>
     </div>
     <div class="photo-intro">
-      <div class="photo-intro__img"></div>
+
       <div class="photo-intro__content">Фотографии пользователей</div>
     </div>
   </header>
@@ -44,8 +45,7 @@
     <div class="photo-items">
       <article class="photo-item">
         <div class="photo-item__wrapper">
-          <div class="photo-item__wrapper-center">
-            <img class="photo-item__picture photo-item__picture_fullsize" src="img/panorama-mobile@1x.jpg" alt="picture" width="320" height="137">
+          <div class="photo-item__wrapper-center" style="background-image:url(img/panorama-mobile@1x.jpg)">
             <div class="photo-item__picture-panorama">Панорама дня</div>
           </div>
         </div>
@@ -58,7 +58,7 @@
 
       </article>
       <article class="photo-item">
-        <img class="photo-item__picture" src="img/photo-1-mobile@1x.jpg" alt="picture" width="280" height="180">
+        <div class="photo-item__picture" style="background-image:url(img/photo-1-mobile@1x.jpg)"></div>
         <div class="photo-item__content">
           <p class="photo-item__title"><span class="photo-item__title-name">Левон</span>
             <span class="photo-item__title-time">(5 часов назад)</span></p>
@@ -68,7 +68,7 @@
 
       </article>
       <article class="photo-item">
-        <img class="photo-item__picture" src="img/photo-2-mobile@1x.jpg" alt="picture" width="280" height="180">
+        <div class="photo-item__picture" style="background-image:url(img/photo-2-mobile@1x.jpg)"></div>
         <div class="photo-item__content">
           <p class="photo-item__title"><span class="photo-item__title-name">Антон</span>
             <span class="photo-item__title-time">(12 часов назад)</span></p>
@@ -78,7 +78,7 @@
 
       </article>
       <article class="photo-item">
-        <img class="photo-item__picture" src="img/photo-3-mobile@1x.jpg" alt="picture" width="280" height="180">
+        <div class="photo-item__picture" style="background-image:url(img/photo-3-mobile@1x.jpg)"></div>
         <div class="photo-item__content">
           <p class="photo-item__title"><span class="photo-item__title-name">Борис</span>
             <span class="photo-item__title-time">(20 часов назад)</span></p>
@@ -88,7 +88,7 @@
 
       </article>
       <article class="photo-item">
-        <img class="photo-item__picture" src="img/photo-4-mobile@1x.jpg" alt="picture" width="280" height="180">
+        <div class="photo-item__picture" style="background-image:url(img/photo-4-mobile@1x.jpg)"></div>
         <div class="photo-item__content">
           <p class="photo-item__title"><span class="photo-item__title-name">Сергей</span>
             <span class="photo-item__title-time">(25 часов назад)</span></p>
@@ -99,7 +99,7 @@
 
       </article>
       <article class="photo-item">
-        <img class="photo-item__picture" src="img/photo-5-mobile@1x.jpg" alt="picture" width="280" height="180">
+        <div class="photo-item__picture" style="background-image:url(img/photo-5-mobile@1x.jpg)"></div>
         <div class="photo-item__content">
           <p class="photo-item__title"><span class="photo-item__title-name">Максим</span>
             <span class="photo-item__title-time">(40 часов назад)</span></p>
@@ -109,7 +109,7 @@
 
       </article>
       <article class="photo-item">
-        <img class="photo-item__picture" src="img/photo-6-mobile@1x.jpg" alt="picture" width="280" height="180">
+        <div class="photo-item__picture" style="background-image:url(img/photo-6-mobile@1x.jpg)"></div>
         <div class="photo-item__content">
           <p class="photo-item__title"><span class="photo-item__title-name">Надежда</span>
             <span class="photo-item__title-time">(45 часов назад)</span></p>
@@ -151,7 +151,7 @@
   </main>
 
   <footer class="page-footer">
-    <img class="page-footer__logo" alt="Pink" src="img/logo-pink-blue-mobile.svg" width="" height="">
+    <img class="page-footer__logo" alt="Pink" src="img/logo-pink-blue-mobile.svg" width="147" height="41">
     <div class="social-icons">
       <a href="#" class="social-icons__social-icon social-icons__social-icon_twit">
         <img src="img/icon-twitter.svg">

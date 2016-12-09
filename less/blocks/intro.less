@@ -1,12 +1,31 @@
 .intro {
-  padding-top: 70px;
+  display: inline-block;
+  background-color: #1d2631;
   text-align: center;
+  font-size: 14px;
+  line-height: 24px;
+  @media @tablet-widths {
+    float: left;
+  }
 }
-.intro__img {}
 .intro__content {}
+.intro__slogan {
+  &_hidden {
+    display: none;
+  }
+}
 .intro__link {}
 .intro__icons {}
 .intro__icon-apple {}
 .intro__icon-android {}
 .intro__icon-windows {}
 .intro__text {}
+.button {
+  height: 55px;
+  width: 280px;
+  border: 3px solid;
+  border-radius: 28px;
+  font-family: "Open Sans Bold", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+}
