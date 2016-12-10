@@ -9,13 +9,14 @@
 }
 .form-intro {
   text-align: center;
-  padding: 0 10px;
+  .container();
   @media @tablet-widths {
     margin-top: 84px;
-    padding: 0 20px 95px;
+    padding-bottom: 95px;
   }
 }
 .form-intro__content {
+  padding: 0 20px;
   font-family: "Open Sans Light";
   color: #fff;
   font-size: 24px;
@@ -25,7 +26,9 @@
     line-height: 50px;
   }
 }
-.form-main {}
+.form-main {
+  .container();
+}
 .form-main__slogan {
   box-sizing: border-box;
   text-align: center;
@@ -52,6 +55,7 @@
   }
 }
 .form {
+  .container();
   display: flex;
   flex-flow: column;
   @media @desktop-widths {
@@ -79,6 +83,7 @@
     }
   }
   @media @desktop-widths {
+    padding: 0 10px;
     min-height: 300px;
   }
 }
@@ -122,18 +127,23 @@
     min-height: 560px;
   }
   @media @desktop-widths {
+    padding: 0 10px;
     min-height: 240px;
   }
 }
 .form__achievements-wrapper {
   min-height: 450px;
   padding: 0;
+  margin: 0;
   list-style: none;
   display: flex;
   justify-content: space-around;
   flex-flow: column;
   & li {
     height: 50px;
+  }
+  @media @tablet-widths {
+    margin-left: 60px;
   }
   @media @desktop-widths {
     flex-flow: column wrap;
@@ -184,6 +194,7 @@
     }
   }
   @media @desktop-widths {
+    padding: 0 10px;
     min-height: 170px;
     & .form__contacts-wrapper {
       flex-flow: row wrap;
@@ -211,6 +222,7 @@
     }
   }
   @media @desktop-widths {
+    padding: 0 10px;
     flex: 1 auto;
   }
 }
@@ -234,6 +246,7 @@
     min-height: 300px;
   }
   @media @desktop-widths {
+    padding: 0 10px;
     min-height: 64px;
   }
 }
@@ -245,9 +258,13 @@
   @media @tablet-widths {
     margin-top: 70px;
   }
+  @media @desktop-widths {
+    padding: 0 10px;
+  }
 }
 .form__send {
   @media @tablet-widths {
+    padding: 0 10px;
     float: left;
   }
 }
