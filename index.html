@@ -34,15 +34,19 @@
       </nav>
     </div>
     <div class="header__down">
-      <div class="header__hand-mobile"><img src="img/iphone-hand-mobile@1x.png" width="258" height="286"></div>
+      <img class="header__hand-mobile" src="img/iphone-hand-mobile@1x.png" width="258" height="286">
       <div class="intro">
         <div class="intro__content">
           <p class="intro__slogan intro__slogan_hidden">Взгляните на жизнь иначе!</p>
-          <a сlass="intro__link button" href="#">Скачать приложение</a>
+          <!--          <a сlass="intro__link button" href="#">Скачать приложение</a>-->
+          <a сlass="intro__link button" href="#">
+            <button type="submit" class="intro__link button">
+              Скачать приложение</button>
+          </a>
           <div class="intro__icons">
-            <a class="intro__icon-apple" href="#">Apple</a>
-            <a class="intro__icon-android" href="#">Android</a>
-            <a class="intro__icon-windows" href="#">Windows</a>
+            <a class="intro__icon-apple" href="#"><img src="img/logo-apple.svg" alt="app store"></a>
+            <a class="intro__icon-android" href="#"><img src="img/logo-android.svg" alt="play market"></a>
+            <a class="intro__icon-windows" href="#"><img src="img/logo-microsoft.svg" alt="windows market"></a>
           </div>
           <p class="intro__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </div>
@@ -54,24 +58,35 @@
       <div class="info__slogan">
         <p>Устали от серости мегаполиса?
           <br>
-          <br>Нам есть, что вам предложить!
+          <br>Нам есть, что вам
+          <br class="info__wrap info__wrap_hidden">предложить!
         </p>
       </div>
+
       <div class="info__list">
-        <div class="info__item">
-          <h2 class="info__title">Поднимает настроение</h2>
-          <p class="info__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-          <div class="info__img-wrapper"><img class="info__img" src="img/iphone-screen-mobile@1x.png"></div>
-        </div>
-        <div class="info__item">
-          <h2 class="info__title">Меняет мир вокруг</h2>
-          <p class="info__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-          <div class="info__img-wrapper"><img class="info__img" src="img/iphone-screen-mobile@1x.png"></div>
-        </div>
-        <div class="info__item">
-          <h2 class="info__title">Заводит новых друзей</h2>
-          <p class="info__text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
-          <div class="info__img-wrapper"><img class="info__img" src="img/iphone-screen-mobile@1x.png"></div>
+        <div class="info__list-inner">
+          <div class="info__item-wrapper">
+            <div class="info__item">
+              <h2 class="info__title">Поднимает настроение</h2>
+              <p class="info__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+
+            </div>
+            <div class="info__item">
+              <h2 class="info__title">Меняет мир вокруг</h2>
+              <p class="info__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+
+            </div>
+            <div class="info__item">
+              <h2 class="info__title">Заводит новых друзей</h2>
+              <p class="info__text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+
+            </div>
+          </div>
+          <div class="info__img-wrapper">
+            <img class="info__img" src="img/iphone-screen-mobile@1x.png">
+            <img class="info__img" src="img/iphone-screen-mobile@1x.png">
+            <img class="info__img" src="img/iphone-screen-mobile@1x.png">
+          </div>
         </div>
       </div>
     </section>
