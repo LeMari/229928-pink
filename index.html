@@ -151,91 +151,75 @@
     </section>
     <section class="price">
       <div class="price__wrapper  slider">
-        <ul class="price__items">
-          <li class="price__item  slider__item">
-            <table class="price__table">
-              <tr>
-                <th class="price__name">База
-                  <br><span>1,99 USD</span></th>
-              </tr>
-              <tr>
-                <td class="price__option  price__option--able">Розовый фильтр</td>
-              </tr>
-              <tr>
-                <td class="price__option  price__option--disable">Смайлики</td>
-              </tr>
-              <tr>
-                <td class="price__option  price__option--disable">Комментарии</td>
-              </tr>
-            </table>
-          </li>
-          <li class="price__item  price__item--active  slider__item">
-            <table class="price__table">
-              <tr>
-                <th class="price__name  price__name--hit">Стандарт
-                  <br><span>3,99 USD</span></th>
-              </tr>
-              <tr>
-                <td class="price__option  price__option--able">Розовый фильтр</td>
-              </tr>
-              <tr>
-                <td class="price__option  price__option--able">Смайлики</td>
-              </tr>
-              <tr>
-                <td class="price__option  price__option--disable">Комментарии</td>
-              </tr>
-            </table>
-          </li>
-          <li class="price__item  slider__item">
-            <table class="price__table">
-              <tr>
-                <th class="price__name">Анлим
-                  <br><span>9,99 USD</span></th>
-              </tr>
-              <tr>
-                <td class="price__option  price__option--able">Розовый фильтр</td>
-              </tr>
-              <tr>
-                <td class="price__option  price__option--able">Смайлики</td>
-              </tr>
-              <tr>
-                <td class="price__option  price__option--able">Комментарии</td>
-              </tr>
-            </table>
-          </li>
-        </ul>
         <input class="slider__input" type="radio" name="price" id="price-input-1" checked>
         <input class="slider__input" type="radio" name="price" id="price-input-2">
         <input class="slider__input" type="radio" name="price" id="price-input-3">
+        <table class="price__table">
+          <tr>
+            <th class="price__name price__name_hidden"></th>
+            <th class="price__name">База
+              <br><span>1,99 USD</span></th>
+            <th class="price__name price__name_hit">Стандарт
+              <br><span>3,99 USD</span></th>
+            <th class="price__name">Анлим
+              <br><span>9,99 USD</span></th>
+          </tr>
+          <tr>
+            <td class="price__option price__option_hidden" option="Q">Розовый фильтр</td>
+            <td class="price__option price__option_able" option="Розовый фильтр"><img src="img/icon-map-marker.svg" width="32" height="22"></td>
+            <td class="price__option price__option_able" option="Розовый фильтр"><img src="img/icon-map-marker.svg" width="32" height="22"></td>
+            <td class="price__option price__option_able" option="Розовый фильтр"><img src="img/icon-map-marker.svg" width="32" height="22"></td>
+          </tr>
+          <tr>
+            <td class="price__option price__option_hidden">Смайлики</td>
+            <td class="price__option price__option_disable" option="Смайлики"></td>
+            <td class="price__option price__option_able" option="Смайлики"><img src="img/icon-map-marker.svg" width="32" height="22"></td>
+            <td class="price__option price__option_able" option="Смайлики"><img src="img/icon-map-marker.svg" width="32" height="22"></td>
+          </tr>
+          <tr>
+            <td class="price__option price__option_hidden">Комментарии</td>
+            <td class="price__option price__option_disable" option="Комментарии"></td>
+            <td class="price__option price__option_disable" option="Комментарии"></td>
+            <td class="price__option price__option_able" option="Комментарии"><img src="img/icon-map-marker.svg" width="32" height="22"></td>
+          </tr>
+        </table>
+
+
+
         <div class="price__toggles slider__toggles">
-          <label class="slider__toggle" for="price-input-1">1</label>
-          <label class="slider__toggle" for="price-input-2">2</label>
-          <label class="slider__toggle" for="price-input-3">3</label>
+          <label class="price__toggle" for="price-input-1"></label>
+          <label class="price__toggle" for="price-input-2"></label>
+          <label class="price__toggle" for="price-input-3"></label>
         </div>
       </div>
     </section>
   </main>
-  <footer class="footer">
-    <div class="footer__slogan">
-      <span>Остались вопросы? Свяжитесь с нами!</span>
+  <section class="contacts">
+    <div class="contacts__wrapper">
+
+      <div class="contacts__slogan">
+        <span>Остались вопросы?<br>Свяжитесь с нами!</span>
+      </div>
+      <div class="contacts__list">
+        <div class="contacts__item">
+          <h2 class="contacts__title">Звоните:</h2>
+          <a href="tel:+78125556666" class="contacts__text">+7 (812) 555-66-66</a>
+        </div>
+        <div class="contacts__item contacts__item_right">
+          <h2 class="contacts__title">Пишите:</h2>
+          <a href="mailto:mail@htmlacademy.ru" class="contacts__text">mail@htmlacademy.ru</a>
+        </div>
+        <div class="contacts__item contacts__item_center">
+          <h2 class="contacts__title">Приезжайте в гости:</h2>
+          <p class="contacts__text">ул. Большая
+            <br>Конюшенная, 19/8</p>
+        </div>
+      </div>
     </div>
-    <div class="footer__contacts">
-      <div class="footer__item">
-        <h2 class="footer__title">Звоните:</h2>
-        <a href="tel:+78125556666" class="footer__text">+7 (812) 555-66-66</a>
-      </div>
-      <div class="footer__item footer__item_right">
-        <h2 class="footer__title">Пишите:</h2>
-        <a href="mailto:mail@htmlacademy.ru" class="footer__text">mail@htmlacademy.ru</a>
-      </div>
-      <div class="footer__item footer__item_center">
-        <h2 class="footer__title">Приезжайте в гости:</h2>
-        <p class="footer__text">ул. Большая
-          <br>Конюшенная, 19/8</p>
-      </div>
-    </div>
-    <div class="map" id="yandex-map"></div>
-    <div class="footer__end footer__end_hidden">
+  </section>
+  <section class="map" id="yandex-map"></section>
+  <footer class="page-footer page-footer_hidden">
+    <div class="page-footer__wrapper">
       <img class="page-footer__logo" alt="Pink" src="img/logo-pink-blue-mobile.svg" width="147" height="41">
       <div class="social-icons">
         <a href="#" class="social-icons__social-icon social-icons__social-icon_twit">
@@ -250,10 +234,11 @@
       </div>
       <div class="creators">
         <span class="creators__text">Разработано</span>
-        <img class="creators__logo" src="img/logo-htmlacademy.svg" alt="Html-academy" width="27" height="35">
+        <img class="creators__logo" src="img/logo-htmlacademy.svg" alt="Html-academy" width="26" height="35">
       </div>
     </div>
   </footer>
+
   <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=w0lZsD1sRhU8kFtEp_x0Rfy8BJeHGPGm&amp;width=100%25&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true&amp;id=yandex-map"></script>
 </body>
 
