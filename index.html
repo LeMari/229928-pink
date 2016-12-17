@@ -105,31 +105,46 @@
     </section>
     <section class="review">
       <div class="review__wrapper  slider">
+
+        <input class="slider__input" type="radio" name="review" id="review-input-1" checked>
+        <input class="slider__input" type="radio" name="review" id="review-input-2">
+        <input class="slider__input" type="radio" name="review" id="review-input-3">
+
+        <label class="review__toggle-arrow review__toggle-arrow_left arrow-1" for="review-input-3"></label>
+        <label class="review__toggle-arrow review__toggle-arrow_right arrow-1" for="review-input-2"></label>
+        <label class="review__toggle-arrow review__toggle-arrow_left arrow-2" for="review-input-1"></label>
+        <label class="review__toggle-arrow review__toggle-arrow_right arrow-2" for="review-input-3"></label>
+        <label class="review__toggle-arrow review__toggle-arrow_left arrow-3" for="review-input-2"></label>
+        <label class="review__toggle-arrow review__toggle-arrow_right arrow-3" for="review-input-1"></label>
+
         <ul class="review__items">
+
           <li class="review__item  review__item--active  slider__item">
-            <p class="review__author-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-            <span class="review__author-name">Николай Петров</span>
-            <span class="review__author-work">25 лет, водитель трамвая</span>
-          </li>
-          <li class="review__item  slider__item">
             <span class="review__author-name">Николай Петров</span>
             <span class="review__author-work">25 лет, водитель трамвая</span>
             <p class="review__author-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </li>
+
+
           <li class="review__item  slider__item">
-            <span class="review__author-name">Николай Петров</span>
+            <span class="review__author-name">Николай1 Петров1</span>
+            <span class="review__author-work">25 лет, водитель трамвая</span>
+            <p class="review__author-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          </li>
+
+          <li class="review__item  slider__item">
+            <span class="review__author-name">Николай2 Петров2</span>
             <span class="review__author-work">25 лет, водитель трамвая</span>
             <p class="review__author-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </li>
         </ul>
         <div class="review__selectors">
-          <input class="slider__input" type="radio" name="review" id="review-input-1" checked>
-          <input class="slider__input" type="radio" name="review" id="review-input-2">
-          <input class="slider__input" type="radio" name="review" id="review-input-3">
+
+
           <div class="review__toggles slider__toggles">
-            <label class="slider__toggle" for="review-input-1">1</label>
-            <label class="slider__toggle" for="review-input-2">2</label>
-            <label class="slider__toggle" for="review-input-3">3</label>
+            <label class="review__toggle review__toggle_active slider__toggle slider__toggle_active" for="review-input-1"></label>
+            <label class="review__toggle slider__toggle" for="review-input-2"></label>
+            <label class="review__toggle slider__toggle" for="review-input-3"></label>
           </div>
         </div>
       </div>
