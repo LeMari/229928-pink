@@ -10,7 +10,7 @@
     justify-content: center;
     align-items: center;
     background-color: transparent;
-    width: 620px;
+    //    width: 620px;
   }
 }
 .nav_active {
@@ -21,10 +21,9 @@
   margin: 0;
   padding: 0;
   @media @desktop-widths {
-    flex: 100%;
+    flex: 1 0 100%;
     display: flex;
     justify-content: space-between;
-
   }
 }
 .nav__item {
@@ -37,6 +36,7 @@
     display: inline-block;
     border: none;
     height: auto;
+    flex: 1 1 auto;
   }
 }
 .nav__link {
@@ -50,7 +50,8 @@
   color: #fff;
   text-transform: uppercase;
   @media @desktop-widths {
-    text-transform: none;
     line-height: 18px;
+    font-family: "Open Sans", "Arial", serif;
+    text-transform: none;
   }
 }

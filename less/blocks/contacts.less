@@ -14,8 +14,20 @@
     right: 0;
     z-index: 1;
   }
+  @media @tablet-widths {
+    &::after {
+      background-size: 100% 75px;
+      bottom: -75px;
+      height: 75px;
+    }
+  }
   @media @desktop-widths {
     padding-top: 64px;
+    &::after {
+      background-size: 100% 107px;
+      bottom: -107px;
+      height: 107px;
+    }
   }
 }
 .contacts__wrapper {

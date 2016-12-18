@@ -3,13 +3,6 @@
   background-position: left 50% top;
   background-size: 100% auto, 32px auto;
   overflow: hidden;
-  margin-bottom: 42px;
-  @media @tablet-widths {
-    margin-bottom: 64px;
-  }
-  @media @desktop-widths {
-    margin-bottom: 90px;
-  }
 }
 .price__wrapper {
   .container();
@@ -17,12 +10,15 @@
   box-sizing: border-box;
   text-align: center;
   padding-top: 92px;
+  margin-bottom: 42px;
   @media @tablet-widths {
     padding-top: 85px;
+    margin-bottom: 64px;
   }
   @media @desktop-widths {
     padding: 0 10px;
     padding-top: 148px;
+    margin-bottom: 90px;
   }
 }
 .price__table {
