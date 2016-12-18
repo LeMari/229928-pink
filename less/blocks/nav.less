@@ -5,12 +5,11 @@
   }
   background-color: #283645;
   @media @desktop-widths {
-    display: block;
-    min-height: 110px;
-    top: 0;
-    right: 10px;
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: transparent;
-    position: absolute;
     width: 620px;
   }
 }
@@ -21,6 +20,12 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  @media @desktop-widths {
+    flex: 100%;
+    display: flex;
+    justify-content: space-between;
+
+  }
 }
 .nav__item {
   height: 64px;
@@ -31,6 +36,7 @@
   @media @desktop-widths {
     display: inline-block;
     border: none;
+    height: auto;
   }
 }
 .nav__link {
@@ -45,5 +51,6 @@
   text-transform: uppercase;
   @media @desktop-widths {
     text-transform: none;
+    line-height: 18px;
   }
 }
