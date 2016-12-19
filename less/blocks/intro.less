@@ -1,31 +1,83 @@
 .intro {
-  display: inline-block;
+  position: relative;
+  .container();
   background-color: #1d2631;
   text-align: center;
   font-size: 14px;
   line-height: 24px;
   @media @tablet-widths {
-    float: left;
+    background-color: transparent;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 330px;
+  }
+  @media @desktop-widths {
+    margin-left: 0;
+    margin-bottom: 100px;
   }
 }
-.intro__content {}
+.intro__content {
+  padding: 27px 0 13px;
+  @media @tablet-widths {
+    margin-top: 0;
+    padding-top: 19px;
+  }
+  @media @desktop-widths {
+    margin-top: 0;
+    padding-top: 8px;
+  }
+}
 .intro__slogan {
   &_hidden {
     display: none;
   }
+  @media @tablet-widths {
+    &_hidden {
+      color: #fff;
+      display: block;
+      font-family: "Open Sans Light";
+      font-size: 40px;
+      line-height: 48px;
+      margin: 0 0 32px;
+      padding: 0 50px;
+    }
+    @media @desktop-widths {
+      font-size: 50px;
+      line-height: 60px;
+      margin: 0 0 52px;
+    }
+  }
 }
-.intro__link {}
-.intro__icons {}
-.intro__icon-apple {}
-.intro__icon-android {}
-.intro__icon-windows {}
-.intro__text {}
-.button {
-  height: 55px;
-  width: 280px;
-  border: 3px solid;
-  border-radius: 28px;
-  font-family: "Open Sans Bold", "Arial", sans-serif;
-  font-size: 18px;
-  line-height: 18px;
+.intro__link {
+  @media @tablet-widths {
+    width: 300px;
+  }
+}
+.intro__icons {
+  margin-top: 29px;
+  padding: 0 20px;
+  & a {
+    display: inline-block;
+    margin: 0 16px;
+  }
+  @media @tablet-widths {
+    margin-top: 43px;
+  }
+  @media @desktop-widths {
+    margin-top: 64px;
+  }
+}
+.intro__text {
+  color: #fff;
+  margin: 17px 0;
+  padding: 0 10px;
+  @media @tablet-widths {
+    font-size: 18px;
+    padding: 0;
+    margin: 30px 0;
+  }
+  @media @desktop-widths {
+    margin: 50px 0 30px;
+  }
 }

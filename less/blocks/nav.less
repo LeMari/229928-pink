@@ -1,20 +1,30 @@
 .nav {
-  display: none;
+  //  display: none;
+  &_active {
+    display: block;
+  }
   background-color: #283645;
   @media @desktop-widths {
-    display: block;
-    min-height: 110px;
-    top: 0;
-    right: 0;
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: transparent;
-    position: absolute;
-    width: 620px;
+    //    width: 620px;
   }
+}
+.nav_active {
+  display: block;
 }
 .nav__list {
   list-style: none;
   margin: 0;
   padding: 0;
+  @media @desktop-widths {
+    flex: 1 0 100%;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 .nav__item {
   height: 64px;
@@ -25,6 +35,8 @@
   @media @desktop-widths {
     display: inline-block;
     border: none;
+    height: auto;
+    flex: 1 1 auto;
   }
 }
 .nav__link {
@@ -38,6 +50,8 @@
   color: #fff;
   text-transform: uppercase;
   @media @desktop-widths {
+    line-height: 18px;
+    font-family: "Open Sans", "Arial", serif;
     text-transform: none;
   }
 }

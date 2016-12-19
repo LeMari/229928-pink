@@ -1,77 +1,189 @@
 .review {
   text-align: center;
-  //  background-color: #fff;
-  min-height: 353px;
-  @media @desktop-widths {}
+  @media @desktop-widths {
+    margin-top: 160px;
+  }
 }
 .review__wrapper {
   .container();
-  min-height: 300px;
-  padding-top: 50px;
+  padding: 45px 20px 30px;
+  box-sizing: border-box;
+  @media @tablet-widths {
+    padding-top: 27px;
+    padding-bottom: 16px;
+  }
+  @media @desktop-widths {
+    position: relative;
+    padding-bottom: 42px;
+  }
 }
 .review__items {
   position: relative;
-  min-height: 210px;
   list-style: none;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   @media @desktop-widths {
+    width: 85%;
     &::before {
       color: #ccc;
       content: "“";
-      font-size: 120px;
-      position: absolute;
       font-family: "Open Sans Bold";
-      top: 0;
+      font-size: 240px;
+      left: 43%;
+      position: absolute;
+      top: -55px;
     }
   }
 }
 .review__item {
   display: none;
-  @media @desktop-widths {
-    &::before {
-      color: #ccc;
-      content: "<";
-      font-size: 120px;
-      position: absolute;
-      font-family: "Open Sans";
-      left: 0;
-    }
-    &::after {
-      color: #ccc;
-      content: ">";
-      font-size: 120px;
-      position: absolute;
-      font-family: "Open Sans";
-      right: 0;
-    }
-  }
-}
-.review__item--active {
-  display: block;
+  flex-flow: column;
+  @media @desktop-widths {}
 }
 .review__author-name {
+  order: 1;
   margin: 0;
   padding: 0;
   font-family: "Open Sans Bold", "Arial", sans-serif;
   font-size: 18px;
   margin-bottom: 15px;
   display: block;
+  @media @tablet-widths {
+    font-size: 20px;
+    order: 2;
+    margin-top: 38px;
+    margin-bottom: 5px;
+  }
+  @media @desktop-widths {
+    font-size: 24px;
+    line-height: 30px;
+    margin-top: 34px;
+    margin-bottom: 2px;
+  }
 }
 .review__author-work {
+  order: 3;
   display: none;
   @media @tablet-widths {
+    line-height: 30px;
     display: block;
+  }
+  @media @desktop-widths {
+    font-size: 18px;
   }
 }
 .review__author-text {
+  order: 2;
   margin: 0;
   padding: 0;
   font-family: "Open Sans", "Arial", sans-serif;
   line-height: 30px;
+  @media @tablet-widths {
+    order: 1;
+    font-size: 18px;
+  }
 }
 .review__selectors {
+  @media @tablet-widths {
+    margin-top: 24px;
+  }
   @media @desktop-widths {
     display: none;
+  }
+}
+.slider__input {
+  display: none;
+}
+.review__toggles {
+  margin-top: 32px;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  @media @tablet-widths {
+    margin-top: 4px;
+  }
+}
+.review__toggle {
+  background-color: #bec2c7;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-sizing: border-box;
+  display: block;
+  float: left;
+  font-size: 0;
+  height: 12px;
+  margin: 6px;
+  width: 12px;
+  &:first-child {
+    margin-left: 0;
+  }
+}
+.review__toggle:hover {
+  background-color: gray;
+  cursor: pointer;
+}
+#review-input-1:checked ~ .review__selectors .review__toggle[for="review-input-1"],
+#review-input-2:checked ~ .review__selectors .review__toggle[for="review-input-2"],
+#review-input-3:checked ~ .review__selectors .review__toggle[for="review-input-3"] {
+  background-color: transparent;
+  border: 3px solid #283645;
+  height: 12px;
+  width: 12px;
+}
+#review-input-1:checked ~ .review__items .review__item:nth-child(1),
+#review-input-2:checked ~ .review__items .review__item:nth-child(2),
+#review-input-3:checked ~ .review__items .review__item:nth-child(3) {
+  display: flex;
+}
+.review__toggle-arrow {
+  display: none;
+  @media @desktop-widths {
+    position: absolute;
+    font-size: 40px;
+    color: #bec2c7;
+    top: 10px;
+    &_left {
+      left: 10px;
+      &::after {
+        border-color: #bec2c7;
+        border-width: 0 0 2px 2px;
+        border-style: solid;
+        content: "";
+        width: 30px;
+        height: 30px;
+        left: 6px;
+        position: absolute;
+        top: 50px;
+        transform: rotate(45deg);
+      }
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    &_right {
+      right: 10px;
+      &::after {
+        border-color: #bec2c7;
+        border-width: 0 2px 2px 0;
+        border-style: solid;
+        content: "";
+        width: 30px;
+        height: 30px;
+        right: 6px;
+        position: absolute;
+        top: 50px;
+        transform: rotate(-45deg);
+      }
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+#review-input-1:checked ~ .arrow-1,
+#review-input-2:checked ~ .arrow-2,
+#review-input-3:checked ~ .arrow-3 {
+  @media @desktop-widths {
+    display: block;
   }
 }
