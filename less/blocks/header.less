@@ -1,7 +1,23 @@
 .header {
   background: url("../img/bg-back-mobile@1x.jpg") no-repeat scroll center top / cover;
-  @media @tablet-widths {}
-  @media @desktop-widths {}
+  @media @retina-dpi,
+  @retina-dppx {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+  }
+  @media @tablet-widths {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    @media @retina-dpi,
+    @retina-dppx {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+    }
+  }
+  @media @desktop-widths {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    @media @retina-dpi,
+    @retina-dppx {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+    }
+  }
 }
 .header__wrapper {
   @media @desktop-widths {
@@ -36,11 +52,45 @@
   margin-top: 22px;
   margin-left: 20px;
   float: left;
+  width: 74.426px;
+  height: 22.859px;
+  &-word,
+  &-glass {
+    fill: #fff;
+  }
+  &-word_tablet,
+  &-glass_tablet,
+  &-glass_desktop,
+  &-stars {
+    display: none;
+  }
   @media @tablet-widths {
-    margin-top: 44px;
+    margin-top: 27px;
+    width: 146.3px;
+    height: 40.375px;
+    &-word_mobile {
+      display: none;
+    }
+    &-word_tablet,
+    &-glass_tablet {
+      display: inline;
+    }
   }
   @media @desktop-widths {
-    margin-top: 44px;
+    &-glass_tablet {
+      display: none;
+    }
+    &-glass_desktop,
+    &-stars {
+      display: inline;
+    }
+  }
+}
+.header__logo-link:hover {
+  .header__logo-word,
+  .header__logo-glass,
+  .header__logo-stars {
+    fill: #d22856;
   }
 }
 .header__burger {
