@@ -132,13 +132,27 @@
   width: 100%;
   height: 137px;
   background-image: url("../img/panorama-mobile@1x.jpg");
+  @media @retina-dpi,
+  @retina-dppx {
+    background-image: url("../img/panorama-mobile@2x.jpg");
+  }
   background-position: center center;
   background-size: cover;
   @media @tablet-widths {
     height: 505px;
+    background-image: url("../img/panorama-tablet@1x.jpg");
+    @media @retina-dpi,
+    @retina-dppx {
+      background-image: url("../img/panorama-tablet@2x.jpg");
+    }
   }
   @media @desktop-widths {
     height: 508px;
+    background-image: url("../img/panorama-desktop@1x.jpg");
+    @media @retina-dpi,
+    @retina-dppx {
+      background-image: url("../img/panorama-desktop@2x.jpg");
+    }
   }
 }
 .photo-item__wrapper-center {
@@ -360,19 +374,30 @@
 .photo-post__filter {
   margin-right: 34px;
   vertical-align: middle;
-  fill: #d22856;
+  opacity: 0.3;
+  &:hover {
+    opacity: 0.5;
+    cursor: pointer;
+  }
   @media @tablet-widths {
     width: 22px;
     height: 22px;
     //    border-bottom: 1px solid #dddfe0;
     margin: -14px 30px 0 17px;
   }
+  @media @desktop-widths {
+    width: auto;
+    height: auto;
+  }
 }
 .photo-post__filter:last-child {
   margin-right: 0;
 }
-.photo-post__filter-crop_active {
+.photo-post__filter_active,
+.photo-post__filter_active:hover {
+  opacity: 1;
   fill: #d22856;
+  cursor: default;
 }
 .photo-post__filter-range {
   display: inline-block;
@@ -405,12 +430,15 @@
   }
 }
 .photo-post__filters-ball {
+  //  background: #fff url("../img/icon-editor-diagram-fill.svg") no-repeat scroll left top / 14px 14px;
+  height: 14px;
   position: absolute;
-  top: 10px;
   right: 0;
-  background-color: #fff;
+  top: 10px;
+  width: 14px;
   &:active {
-    background-color: #d22856;
+    //    background-color: #d22856;
+    stroke: #d22856;
   }
 }
 .photo-post__buttons {
