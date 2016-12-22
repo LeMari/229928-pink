@@ -14,7 +14,7 @@
 }
 .photo-intro__content {
   padding: 0 20px;
-  font-family: "Open Sans Light";
+  font-family: "Open Sans Light", "Arial", sans-serif;
   color: #fff;
   font-size: 24px;
   line-height: 28px;
@@ -314,6 +314,7 @@
 }
 .photo-post__picture {
   display: inline-block;
+  vertical-align: middle;
   padding: 20px;
   @media @tablet-widths {
     flex: 1 auto;
@@ -401,6 +402,7 @@
 }
 .photo-post__filter-range {
   display: inline-block;
+  vertical-align: middle;
   text-align: center;
   //  margin: 0 40px 30px;
   margin: 22px auto 30px;
@@ -420,6 +422,7 @@
 }
 .photo-post__filters-scale {
   display: inline-block;
+  vertical-align: baseline;
   width: 240px;
   border: 1px solid #283645;
   @media @tablet-widths {
@@ -430,14 +433,17 @@
   }
 }
 .photo-post__filters-ball {
+  background: #fff;
+  border: 2px solid #d22856;
+  border-radius: 50%;
   //  background: #fff url("../img/icon-editor-diagram-fill.svg") no-repeat scroll left top / 14px 14px;
-  height: 14px;
+  width: 10px;
+  height: 10px;
   position: absolute;
   right: 0;
   top: 10px;
-  width: 14px;
   &:active {
-    //    background-color: #d22856;
+    background-color: #d22856;
     stroke: #d22856;
   }
 }
