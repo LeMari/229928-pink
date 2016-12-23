@@ -125,6 +125,9 @@
   position: relative;
   height: 318px;
   overflow: hidden;
+  & picture:nth-child(3) img {
+    display: block;
+  }
   @media @tablet-widths {
     flex: 1 1 100%;
     order: 1;
@@ -138,26 +141,22 @@
   }
 }
 .info__img {
-  display: block;
+  display: none;
   bottom: -38px;
   left: 50%;
   position: absolute;
   transform: translateX(-50%);
-  &:nth-child(n+2) {
-    display: none;
-  }
   @media @tablet-widths {
-    bottom: -60px;
-    height: 542px;
+    /*bottom: -60px;
+    height: 542px;*/
+    bottom: 0;
   }
   @media @desktop-widths {
+    display: block;
     position: relative;
     transform: none;
     left: 0;
-    height: 340px;
+    //    height: 340px;
     bottom: 0;
-    &:nth-child(n+2) {
-      display: block;
-    }
   }
 }

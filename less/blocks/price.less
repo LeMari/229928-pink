@@ -37,14 +37,14 @@
   height: 98px;
   font-size: 18px;
   line-height: 30px;
-  font-family: "Open Sans Bold";
+  font-family: "Open Sans Bold", "Arial", sans-serif;
   text-transform: uppercase;
   &_hidden {
     display: none;
   }
   & span {
     font-size: 24px;
-    font-family: "Open Sans Light";
+    font-family: "Open Sans Light", "Arial", sans-serif;
   }
   &_hit {
     position: relative;
@@ -72,10 +72,10 @@
       font-size: 18px;
     }
     &_hit {
-      background-position: -8px -8px;
+      background-image: url("../img/bg-hit-tablet.svg");
       &::before {
-        top: 2px;
-        left: 2px;
+        top: 4px;
+        left: 4px;
       }
     }
   }
@@ -92,16 +92,15 @@
   line-height: 30px;
   text-align: left;
   padding: 0 20px;
-  vertical-align: middle;
   & img {
     display: inline-block;
+    vertical-align: middle;
     float: right;
   }
   &:not(.price__option_hidden)::before {
-    content: attr(option);
+    content: attr(data-option);
     text-transform: uppercase;
-    font-family: "Open Sans";
-    display: inline-block;
+    font-family: "Open Sans", "Arial", sans-serif;
   }
   &_hidden {
     display: none;

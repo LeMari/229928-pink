@@ -1,13 +1,21 @@
 .map {
   height: 200px;
+  background: url("../img/bg-map-mobile@2x.jpg") no-repeat scroll center top / cover;
   @media @tablet-widths {
     height: 380px;
+    background-image: url("../img/bg-map-tablet@1x.jpg");
+    @media @retina-dpi,
+    @retina-dppx {
+      background-image: url("../img/bg-map-tablet@2x.jpg");
+    }
   }
   @media @desktop-widths {
     height: 500px;
     margin-bottom: 35px;
+    background-image: url("../img/bg-map-desktop@1x.jpg");
+    @media @retina-dpi,
+    @retina-dppx {
+      background-image: url("../img/bg-map-desktop@2x.jpg");
+    }
   }
-}
-.map * {
-  //  z-index: 100;
 }

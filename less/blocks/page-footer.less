@@ -19,14 +19,44 @@
     padding: 0 10px;
   }
 }
+.page-footer__logo-word {
+  fill: #283645;
+}
+.page-footer__logo-glass_desktop,
+.page-footer__logo-stars {
+  display: none;
+}
 @media @tablet-widths {
   .page-footer__logo {
     float: left;
   }
   .social-icons {
     display: inline-block;
+    vertical-align: middle;
   }
   .creators {
     float: right;
+  }
+}
+@media @desktop-widths {
+  .page-footer__logo-glass_tablet {
+    display: none;
+  }
+  .page-footer__logo-glass_desktop,
+  .page-footer__logo-stars {
+    display: block;
+  }
+}
+.page-footer__logo-link:hover .page-footer__logo-word {
+  /*&-word path {*/
+  fill: #d22856;
+  //  }
+}
+.page-footer__logo-link:active {
+  & * {
+    opacity: 0.7;
+  }
+  & .page-footer__logo-word {
+    fill: #283645;
   }
 }

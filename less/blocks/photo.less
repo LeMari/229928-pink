@@ -14,7 +14,7 @@
 }
 .photo-intro__content {
   padding: 0 20px;
-  font-family: "Open Sans Light";
+  font-family: "Open Sans Light", "Arial", sans-serif;
   color: #fff;
   font-size: 24px;
   line-height: 28px;
@@ -53,7 +53,8 @@
 .photo-main .photo-panorama {
   margin-bottom: 20px;
   & .photo-panorama__content {
-    padding: 12px 18px 0;
+    //    padding: 12px 18px 0;
+    padding: 19px 18px 0;
   }
   @media @tablet-widths {
     margin-bottom: 50px;
@@ -117,7 +118,6 @@
 }
 .photo-item {
   margin-bottom: 20px;
-  /*background-color: #f2f2f2;*/
   @media @tablet-widths {
     flex: 0 300px;
     margin-bottom: 25px;
@@ -132,13 +132,27 @@
   width: 100%;
   height: 137px;
   background-image: url("../img/panorama-mobile@1x.jpg");
+  @media @retina-dpi,
+  @retina-dppx {
+    background-image: url("../img/panorama-mobile@2x.jpg");
+  }
   background-position: center center;
   background-size: cover;
   @media @tablet-widths {
     height: 505px;
+    background-image: url("../img/panorama-tablet@1x.jpg");
+    @media @retina-dpi,
+    @retina-dppx {
+      background-image: url("../img/panorama-tablet@2x.jpg");
+    }
   }
   @media @desktop-widths {
     height: 508px;
+    background-image: url("../img/panorama-desktop@1x.jpg");
+    @media @retina-dpi,
+    @retina-dppx {
+      background-image: url("../img/panorama-desktop@2x.jpg");
+    }
   }
 }
 .photo-item__wrapper-center {
@@ -300,6 +314,7 @@
 }
 .photo-post__picture {
   display: inline-block;
+  vertical-align: middle;
   padding: 20px;
   @media @tablet-widths {
     flex: 1 auto;
@@ -360,22 +375,34 @@
 .photo-post__filter {
   margin-right: 34px;
   vertical-align: middle;
-  fill: #d22856;
+  opacity: 0.3;
+  &:hover {
+    opacity: 0.5;
+    cursor: pointer;
+  }
   @media @tablet-widths {
     width: 22px;
     height: 22px;
     //    border-bottom: 1px solid #dddfe0;
     margin: -14px 30px 0 17px;
   }
+  @media @desktop-widths {
+    width: auto;
+    height: auto;
+  }
 }
 .photo-post__filter:last-child {
   margin-right: 0;
 }
-.photo-post__filter-crop_active {
+.photo-post__filter_active,
+.photo-post__filter_active:hover {
+  opacity: 1;
   fill: #d22856;
+  cursor: default;
 }
 .photo-post__filter-range {
   display: inline-block;
+  vertical-align: middle;
   text-align: center;
   //  margin: 0 40px 30px;
   margin: 22px auto 30px;
@@ -395,6 +422,7 @@
 }
 .photo-post__filters-scale {
   display: inline-block;
+  vertical-align: baseline;
   width: 240px;
   border: 1px solid #283645;
   @media @tablet-widths {
@@ -405,12 +433,18 @@
   }
 }
 .photo-post__filters-ball {
+  background: #fff;
+  border: 2px solid #d22856;
+  border-radius: 50%;
+  //  background: #fff url("../img/icon-editor-diagram-fill.svg") no-repeat scroll left top / 14px 14px;
+  width: 10px;
+  height: 10px;
   position: absolute;
-  top: 10px;
   right: 0;
-  background-color: #fff;
+  top: 10px;
   &:active {
     background-color: #d22856;
+    stroke: #d22856;
   }
 }
 .photo-post__buttons {

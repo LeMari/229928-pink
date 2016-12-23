@@ -1,5 +1,5 @@
 .nav {
-  //  display: none;
+  display: none;
   &_active {
     display: block;
   }
@@ -34,9 +34,11 @@
   margin: 0 auto;
   @media @desktop-widths {
     display: inline-block;
+    vertical-align: baseline;
     border: none;
     height: auto;
     flex: 1 1 auto;
+    text-align: center;
   }
 }
 .nav__link {
@@ -49,9 +51,30 @@
   line-height: 32px;
   color: #fff;
   text-transform: uppercase;
+  &:hover {
+    color: #D22856;
+  }
+  &:active {
+    opacity: 0.3;
+  }
   @media @desktop-widths {
+    display: inline-block;
+    vertical-align: baseline;
     line-height: 18px;
     font-family: "Open Sans", "Arial", serif;
     text-transform: none;
+    &:hover {
+      color: #D22856;
+    }
+    &:active {
+      color: #fff;
+      opacity: 0.3;
+    }
+    &_active {
+      border-bottom: 2px solid #fff;
+      &:hover {
+        border-color: #D22856;
+      }
+    }
   }
 }

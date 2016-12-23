@@ -1,10 +1,13 @@
 .social-icons {
   margin-top: 32px;
-  display: block;
+  //  display: block;
+  display: inline-block;
+  vertical-align: middle;
   &__social-icon {
-    border: 2px solid #e9ebec;
+    border: 3px solid #e9ebec;
     border-radius: 50%;
     display: inline-block;
+    vertical-align: middle;
     height: 50px;
     position: relative;
     width: 50px;
@@ -17,6 +20,7 @@
       top: 50%;
       transform: translateX(-50%) translateY(-50%);
     }
+    &:active,
     &:active img {
       opacity: 0.3;
     }

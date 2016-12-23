@@ -14,7 +14,7 @@
 }
 .form-intro__content {
   padding: 0 20px;
-  font-family: "Open Sans Light";
+  font-family: "Open Sans Light", "Arial", sans-serif;
   color: #fff;
   font-size: 24px;
   line-height: 28px;
@@ -37,7 +37,7 @@
 .form-main__slogan {
   text-align: center;
   padding: 43px 20px 33px;
-  font-family: "Open Sans";
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 30px;
   @media @tablet-widths {
@@ -53,6 +53,7 @@
   display: none;
   @media @tablet-widths {
     display: inline-block;
+    vertical-align: middle;
   }
 }
 .form {
@@ -106,7 +107,7 @@
 .form__field-name {
   margin: 0;
   padding: 0;
-  font-family: "Open Sans";
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 14px;
   text-transform: uppercase;
   color: #d22856;
@@ -139,14 +140,14 @@
 .form__label-radio,
 .form__input-text,
 .form__emotion-text {
-  font-family: "Open Sans";
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 30px;
 }
 .form__input-text,
 .form__emotion-text {
   box-shadow: none;
-  border: 2px solid #d7dcde;
+  border: 2px solid #e5e5e5;
   border-radius: 3px;
   flex: 1 100%;
   box-sizing: border-box;
@@ -427,6 +428,42 @@
     display: none;
     @media @desktop-widths {
       display: inline-block;
+      vertical-align: middle;
     }
+  }
+}
+.form__label-phone {
+  @media @tablet-widths {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      top: 0;
+      right: 0;
+      background: #e5e5e5 url("../img/icon-phone.svg") no-repeat center;
+    }
+  }
+}
+.form__label-email {
+  @media @tablet-widths {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 58px;
+      height: 58px;
+      top: 2px;
+      right: 2px;
+      background: #e5e5e5 url("../img/icon-mail.svg") no-repeat center;
+    }
+  }
+}
+input[name="family"],
+input[name="name"],
+input[name="email"] {
+  &.required {
+    border-color: #d22856;
   }
 }

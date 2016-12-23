@@ -1,7 +1,7 @@
 .review {
   text-align: center;
   @media @desktop-widths {
-    margin-top: 160px;
+    padding-top: 160px;
   }
 }
 .review__wrapper {
@@ -24,14 +24,15 @@
   padding: 0;
   @media @desktop-widths {
     width: 85%;
+    position: relative;
     &::before {
-      color: #ccc;
-      content: "“";
-      font-family: "Open Sans Bold";
-      font-size: 240px;
-      left: 43%;
+      background: transparent url("../img/icon-quotes.svg") no-repeat;
+      content: "";
       position: absolute;
-      top: -55px;
+      left: 45%;
+      top: -109px;
+      width: 80px;
+      height: 65px;
     }
   }
 }
@@ -145,37 +146,47 @@
     &_left {
       left: 10px;
       &::after {
-        border-color: #bec2c7;
-        border-width: 0 0 2px 2px;
-        border-style: solid;
+        background: url("../img/icon-review-arrow-left.svg") no-repeat;
         content: "";
-        width: 30px;
-        height: 30px;
+        width: 21px;
+        height: 41px;
         left: 6px;
         position: absolute;
         top: 50px;
-        transform: rotate(45deg);
+        opacity: 0.3;
+        display: block;
       }
       &:hover {
         cursor: pointer;
+      }
+      &:hover::after {
+        opacity: 0.6;
+      }
+      &:active::after {
+        opacity: 0.1;
       }
     }
     &_right {
       right: 10px;
       &::after {
-        border-color: #bec2c7;
-        border-width: 0 2px 2px 0;
-        border-style: solid;
+        background: url("../img/icon-review-arrow-right.svg") no-repeat;
         content: "";
-        width: 30px;
-        height: 30px;
+        width: 21px;
+        height: 41px;
         right: 6px;
         position: absolute;
         top: 50px;
-        transform: rotate(-45deg);
+        opacity: 0.3;
+        display: block;
       }
       &:hover {
         cursor: pointer;
+      }
+      &:hover::after {
+        opacity: 0.6;
+      }
+      &:active::after {
+        opacity: 0.1;
       }
     }
   }
