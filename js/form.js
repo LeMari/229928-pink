@@ -8,7 +8,7 @@ var close_fail = popup_wrapper.querySelector(".popup-fail__send");
 var username = form.querySelector("[name=name]");
 var userfamily = form.querySelector("[name=family]");
 var email = form.querySelector("[name=email]");
-var storage = localStorage.getItem("username");
+
 
 close_success.addEventListener("click", function (a) {
   a.preventDefault();
@@ -31,7 +31,7 @@ form.addEventListener("submit", function (a) {
     popup_success.classList.add("popup-success_active");
     popup_fail.classList.remove("popup-fail_active");
 
-    localStorage.setItem("username", username.value);
+
   } else {
     popup_wrapper.classList.add("form-alert_active");
     popup_success.classList.remove("popup-success_active");

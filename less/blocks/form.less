@@ -73,25 +73,28 @@
   & .form__label-text {
     display: flex;
     flex-flow: column;
-    height: 66px;
-    margin-bottom: 50px;
+    margin-bottom: 17px;
   }
   @media @tablet-widths {
     flex: 1 auto;
-    margin-bottom: 2px;
+    margin-bottom: 70px;
     padding-left: 18px;
     & .form__label-text {
       flex-flow: row wrap;
       align-items: center;
+      margin-bottom: 0;
+      &:nth-child(n+2) {
+        margin-top: 50px;
+      }
     }
     & .form__input-text {
       flex: 13 auto;
     }
   }
   @media @desktop-widths {
-    /*padding: 0 60px 0 10px;*/
-    flex: 1 1 39%;
-    padding: 0 60px 0 10px;
+    box-sizing: border-box;
+    flex: 0 1 50%;
+    padding: 0 32px 0 10px;
     & .form__label-text {
       margin-top: 16px;
     }
@@ -119,12 +122,13 @@
   line-height: 18px;
   padding: 0 25px;
   text-align: center;
-  //	position: absolute;
-  position: relative;
-  top: 8px;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  background: #fff;
+  @media @tablet-widths {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background: #fff;
+  }
 }
 .form__field-name {
   line-height: 30px;
@@ -174,9 +178,13 @@
     margin-top: 56px;
     background-color: transparent;
     order: 4;
+    & legend {
+      width: 380px;
+    }
   }
   @media @desktop-widths {
     padding: 0 10px;
+    margin-top: 42px;
   }
 }
 .form__achievements-wrapper {
@@ -191,10 +199,10 @@
     margin: 22px 0;
   }
   @media @tablet-widths {
-    margin: 28px 0 22px 60px;
+    margin: 40px 0 22px 60px;
   }
   @media @desktop-widths {
-    margin: 28px 0 28px 60px;
+    margin: 36px 0 28px 60px;
     flex-flow: row wrap;
     & li {
       width: 30%;
@@ -243,10 +251,9 @@
   padding: 0 20px;
   flex: 1 100%;
   order: 3;
+  margin-bottom: 24px;
   & .form__contacts-wrapper {
     margin-top: 30px;
-    margin-bottom: 42px;
-    height: 214px;
     display: flex;
     flex-flow: column;
     justify-content: space-between
@@ -254,6 +261,7 @@
   & .form__label-text {
     display: flex;
     flex-flow: column;
+    margin-bottom: 18px;
   }
   & .form__field-name {
     margin-left: 21px;
@@ -266,11 +274,11 @@
     order: 2;
   }
   @media @tablet-widths {
+    margin-bottom: 0;
     margin-top: 40px;
     & .form__contacts-wrapper {
       padding: 0 58px;
-      margin-top: 35px;
-      margin-bottom: 47px;
+      margin-top: 48px;
     }
     & .form__label-text {
       margin-bottom: 30px;
@@ -294,7 +302,6 @@
     padding: 0 10px;
     margin-top: 0;
     & .form__contacts-wrapper {
-      height: 66px;
       flex-flow: row wrap;
       justify-content: space-between;
       & .form__label-text {
@@ -313,12 +320,18 @@
   }
   @media @tablet-widths {
     padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 32px;
     background-color: transparent;
     order: 2;
+    & legend {
+      width: 325px;
+    }
   }
   @media @desktop-widths {
-    padding: 0 10px;
-    flex: 1 auto;
+    box-sizing: border-box;
+    flex: 0 1 50%;
+    padding: 0 10px 0 34px;
   }
 }
 .form__apps-wrapper {
@@ -338,7 +351,7 @@
   @media @desktop-widths {
     margin: 35px 0 35px 72px;
     & li {
-      margin: 17px 0 18px;
+      margin: 28px 0 10px;
     }
     & .form__label-radio {
       padding-left: 60px;
@@ -379,16 +392,18 @@
   }
   @media @tablet-widths {
     padding: 0 20px;
-    margin-top: 56px;
+    margin-top: 64px;
     & fieldset {
       padding: 20px 60px 48px;
     }
     & .form__emotion-text {
+      margin-top: 27px;
       height: 192px;
     }
   }
   @media @desktop-widths {
     padding: 0 10px;
+    margin-top: 65px;
     & fieldset {
       padding: 20px 60px 41px;
     }
@@ -412,9 +427,7 @@
 }
 .form__send {
   @media @tablet-widths {
-    //    padding: 0 10px;
     float: left;
-    //    height: 60px;
   }
 }
 .form__required {
