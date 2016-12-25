@@ -1,5 +1,5 @@
 .header {
-  background: url("../img/bg-back-mobile@1x.jpg") no-repeat scroll center top / cover;
+  background: #212D39 url("../img/bg-back-mobile@1x.jpg") no-repeat scroll center top / cover;
   @media @retina-dpi,
   @retina-dppx {
     background-image: url("../img/bg-back-mobile@2x.jpg");
@@ -28,6 +28,7 @@
 .header__title-wrapper {
   @media @desktop-widths {
     .container();
+    width: auto;
     display: flex;
     flex-flow: row;
     justify-content: space-between;
@@ -44,7 +45,7 @@
     height: 110px;
   }
   @media @desktop-widths {
-    flex: 1 1 auto;
+    width: 160px;
     background-color: transparent;
   }
 }

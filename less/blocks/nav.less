@@ -5,15 +5,15 @@
   }
   background-color: #283645;
   @media @desktop-widths {
-    flex: 0 68%;
+    flex-grow: 1;
+    flex-wrap: wrap;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-end;
     background-color: transparent;
-    width: 625px;
   }
 }
-.nav_active {
+.nav_active,
+.nav_nojs {
   display: block;
 }
 .nav__list {
@@ -21,9 +21,11 @@
   margin: 0;
   padding: 0;
   @media @desktop-widths {
-    flex: 1 0 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin-left: 20px;
+    min-width: 630px;
   }
 }
 .nav__item {
@@ -37,8 +39,8 @@
     vertical-align: baseline;
     border: none;
     height: auto;
-    flex: 1 1 auto;
     text-align: center;
+    margin: 0 0 0 5px;
   }
 }
 .nav__link {
