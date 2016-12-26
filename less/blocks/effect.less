@@ -85,12 +85,21 @@
     & .effect__title-wrap_hidden {
       display: inline;
     }
+    &_wrap {
+      margin-bottom: 0;
+    }
   }
   @media @desktop-widths {
     margin-top: 10px;
     line-height: 30px;
     & .effect__title-wrap_hidden {
       display: none;
+    }
+    display: inline-block;
+    vertical-align: top;
+    &_wrap {
+      float: left;
+      margin-right: 8px;
     }
   }
 }

@@ -23,16 +23,22 @@
     line-height: 60px;
   }
 }
-.info__wrap_hidden {
-  display: none;
+.info__question,
+.info__answer {
+  width: 100%;
+  display: inline-block;
+  vertical-align: top;
+}
+.info__question {
   @media @tablet-widths {
-    display: inline;
+    .clearfix();
   }
 }
-.info__nowrap_hidden {
-  display: inline;
+.info__answer {
+  margin-top: 28px;
   @media @tablet-widths {
-    display: none;
+    margin-top: 0;
+    width: 500px;
   }
 }
 .info__list {

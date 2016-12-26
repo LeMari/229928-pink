@@ -42,7 +42,12 @@
   &_hidden {
     display: none;
   }
-  & span {
+  & .price__tariff-name,
+  & .price__tariff-cost {
+    padding: 0;
+    margin: 0;
+  }
+  & .price__tariff-cost {
     font-size: 24px;
     font-family: "Open Sans Light", "Arial", sans-serif;
   }
@@ -63,13 +68,13 @@
     font-size: 16px;
     width: 25%;
     height: 80px;
+    & .price__tariff-cost {
+      font-size: 18px;
+    }
     &_hidden {
       display: table-cell;
       background-color: transparent;
       border: none;
-    }
-    & span {
-      font-size: 18px;
     }
     &_hit {
       background-image: url("../img/bg-hit-tablet.svg");
@@ -82,6 +87,9 @@
   @media @desktop-widths {
     font-size: 18px;
     height: 98px;
+    & .price__tariff-cost {
+      font-size: 24px;
+    }
   }
 }
 .price__option {
